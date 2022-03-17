@@ -1,0 +1,125 @@
+@import "imports/reset", "imports/variables";
+
+
+
+/*HEADER*/
+
+header .menu_ordenador ul li a{ /*Le damos collor blanco a las redirecciones del nav*/
+  color: $blanco;
+}
+
+header img{ /*Un valor maximo a la imagen del logo*/
+  max-width: 120px;
+}
+.boton{  /*Seleccionamos el resgistrarse y le creamos la caja con su color y sus estilos*/
+  background: $boton-registrarse;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 15px;
+  padding: 7px;
+}
+
+.menu_ordenador>ul li{  /*Ponemos todos los li en la misma linea y creamos separacion entre cada uno de ellos*/
+  padding: 15px;
+  display: inline-block;
+}
+
+.section{ /*Le damos color de fondo ,tamaño atodo lo que es el encabezado y lo alineamos con flex.*/
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $negro;
+}
+.menu_hamburguesa{
+  background-color: transparent;
+  color: $blanco;
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.menu_movil{
+  display: none;
+}
+.menu_movil ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu_movil li>a{
+  color: $blanco;
+  font-size: 15px;
+}
+
+
+
+/*MAIN*/
+
+main{ /*adaptamos el ancho y predeterminamos el ancho y metemos imagen de fondo con sus diferentes atributos*/
+  width: 100%;
+  height: 700px;
+  background-image: url("../img/img_fondo_index.png");
+  background-size: cover;
+  background-position: center;
+}
+
+
+main>*{
+  display: flex;
+  justify-content: center;
+}
+
+main a{
+  color: $blanco;
+  align-items: center;
+  background: $boton-registrarse;
+  border-radius: 5px;
+  height: 47px;
+  width: 195px;
+  margin: 0 auto;
+  font-size: 27px;
+}
+main p {
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 68px;
+}
+main h1{
+  padding-top: 16%;
+  font-weight: bold;
+  font-size: 52px;
+}
+
+
+footer{ /*Le indicamos estilos al footer y lo alineamos */
+  background-color: $negro;
+  color: $blanco;
+  height: 63px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer>div:nth-child(2){  /*alineamos los a de dentro del div del footer*/
+  display: flex;
+}
+
+
+footer>div:nth-child(2)>a{  /*dejamos distancia entre las coockies ,privacidad y aviso legal*/
+  padding-inline: 15px;
+}
+
+
+/*RESPONSIVE*/
+@media screen and (max-width: 768px) and (min-width: 320px){
+  .menu_ordenador{
+    display: none;
+  }
+  .menu_hamburguesa{
+    display: block;
+  }
+  .menu_movil.mostrar {
+    display: block;
+  }
+}
