@@ -74,6 +74,10 @@ main>section{
 
 .texto_grande{
   width: 148%;
+  border: solid;
+}
+main>p{
+  font-weight: 100;
 }
 
 main>section>div{
@@ -91,12 +95,11 @@ main>section>div{
 
 
 main>section>div>h3{
-  text-align: center;
   font-family: Inter;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
-  line-height: 19px;
+  line-height: 28px;
   text-decoration-line: underline;
   padding-bottom: 15px;
 
@@ -148,8 +151,8 @@ footer>*{
 
 }
 
-/*768-320*/
-@media screen and (max-width: 768px) and (min-width: 320px){
+/*768-0*/
+@media screen and (max-width: 768px) and (min-width: 0px){
   .menu_ordenador{
     display: none;
   }
@@ -162,6 +165,9 @@ footer>*{
 
   section{
     display: block;
+  }
+  .texto_grande{
+    border: none;
   }
 
   footer{
