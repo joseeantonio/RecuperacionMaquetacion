@@ -143,6 +143,7 @@ section {
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
+  align-items: center;
 }
 
 .principal > p {
@@ -167,13 +168,12 @@ section {
 
 .caja h2 {
   margin-bottom: 20px;
-  font-size: 20px;
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
   margin-top: 23px;
-  color: white;
+  color: #ffffff;
 }
 
 .caja p {
@@ -206,7 +206,8 @@ section {
   margin-bottom: 20px;
   text-align: center;
   padding-top: 3px;
-  color: white;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 .debilidadesYtipos p {
@@ -276,6 +277,36 @@ footer > * {
 
   .menu_movil.mostrar {
     display: block;
+  }
+
+  main > section {
+    display: grid;
+  }
+
+  section > img {
+    margin: 0 auto 20px;
+    max-width: 220px;
+  }
+
+  .principal > p {
+    margin: 0 auto;
+    width: 245px;
+  }
+
+  .caja {
+    width: 255px;
+  }
+
+  .caja h2 {
+    font-size: 23px;
+  }
+
+  .caja p {
+    font-size: 23px;
+  }
+
+  .caja {
+    height: 303px;
   }
 
   footer {
