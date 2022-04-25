@@ -79,10 +79,12 @@ header img {
   color: #ffffff;
   display: none;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 30px;
+  margin-right: 20px;
 }
 .menu_movil {
   display: none;
+  background-color: #000000FF;
 }
 .menu_movil ul {
   display: flex;
@@ -92,6 +94,7 @@ header img {
 .menu_movil li > a {
   color: #ffffff;
   font-size: 15px;
+  margin: 10px;
 }
 /*MAIN*/
 main {
@@ -122,28 +125,30 @@ main p {
   line-height: 68px;
 }
 main h1 {
-  padding-top: 16%;
+  padding-top: 220px;
   font-weight: bold;
   font-size: 52px;
 }
+/*FOOTER*/
 footer {
   /*Le indicamos estilos al footer y lo alineamos */
   background-color: #000000FF;
   color: #ffffff;
-  height: 63px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-footer > div:nth-child(2) {
-  /*alineamos los a de dentro del div del footer*/
-  display: flex;
-}
-footer > div:nth-child(2) > a {
-  /*dejamos distancia entre las coockies ,privacidad y aviso legal*/
-  padding-inline: 15px;
+footer > * {
+  padding: 1.4em;
 }
 /*RESPONSIVE*/
+/*1024-769*/
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .menu_ordenador li {
+    font-size: 12px;
+  }
+}
+/*768-320*/
 @media screen and (max-width: 768px) and (min-width: 320px) {
   .menu_ordenador {
     display: none;
@@ -155,6 +160,34 @@ footer > div:nth-child(2) > a {
 
   .menu_movil.mostrar {
     display: block;
+  }
+
+  main a {
+    /*bajamos el tamaño 4px*/
+    font-size: 16px;
+    height: 43px;
+    width: 187px;
+  }
+
+  main p {
+    font-size: 16px;
+  }
+
+  main h1 {
+    font-size: 41px;
+  }
+
+  footer {
+    display: grid;
+    text-align: center;
+  }
+
+  footer > * {
+    padding: 0.4em;
+  }
+
+  main a {
+    width: 125px;
   }
 }
 /*# sourceMappingURL=index.d01dfbe0.css.map */
