@@ -159,3 +159,21 @@ footer>*{
     width: 125px;
   }
 }
+
+
+
+
+@media (prefers-color-scheme: light) {
+
+  /*HEADER*/
+  .section {background-color: $blanco;}
+  header .menu_ordenador ul li a {color: $negro}
+  .menu_ordenador > ul > li:last-child > a {color: $blanco}
+  .menu_hamburguesa {color: $negro}
+  header .menu_movil ul {background-color: $blanco}
+  .menu_movil li > a {color: $negro}
+
+  /*FOOTER*/
+  footer {background-color: $blanco;color: $negro}
+
+}

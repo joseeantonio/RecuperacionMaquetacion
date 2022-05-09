@@ -190,4 +190,36 @@ footer > * {
     width: 125px;
   }
 }
+@media (prefers-color-scheme: light) {
+  /*HEADER*/
+  .section {
+    background-color: #ffffff;
+  }
+
+  header .menu_ordenador ul li a {
+    color: #000000FF;
+  }
+
+  .menu_ordenador > ul > li:last-child > a {
+    color: #ffffff;
+  }
+
+  .menu_hamburguesa {
+    color: #000000FF;
+  }
+
+  header .menu_movil ul {
+    background-color: #ffffff;
+  }
+
+  .menu_movil li > a {
+    color: #000000FF;
+  }
+
+  /*FOOTER*/
+  footer {
+    background-color: #ffffff;
+    color: #000000FF;
+  }
+}
 /*# sourceMappingURL=index.d01dfbe0.css.map */

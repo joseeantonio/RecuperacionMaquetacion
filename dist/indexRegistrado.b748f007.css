@@ -165,17 +165,17 @@ footer > * {
 
   main a {
     /*bajamos el tamaño 4px*/
-    font-size: 23px;
+    font-size: 16px;
     height: 43px;
     width: 187px;
   }
 
   main p {
-    font-size: 23px;
+    font-size: 16px;
   }
 
   main h1 {
-    font-size: 48px;
+    font-size: 41px;
   }
 
   footer {
@@ -185,6 +185,34 @@ footer > * {
 
   footer > * {
     padding: 0.4em;
+  }
+}
+@media (prefers-color-scheme: light) {
+  /*HEADER*/
+  .section {
+    background-color: #ffffff;
+  }
+
+  header .menu_ordenador ul li a {
+    color: #000000FF;
+  }
+
+  .menu_hamburguesa {
+    color: #000000FF;
+  }
+
+  header .menu_movil ul {
+    background-color: #ffffff;
+  }
+
+  .menu_movil li > a {
+    color: #000000FF;
+  }
+
+  /*FOOTER*/
+  footer {
+    background-color: #ffffff;
+    color: #000000FF;
   }
 }
 /*# sourceMappingURL=indexRegistrado.b748f007.css.map */
