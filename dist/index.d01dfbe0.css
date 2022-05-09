@@ -75,6 +75,7 @@ header img {
   background-color: #000000FF;
 }
 .menu_hamburguesa {
+  /*con el display none lo ocultamos para que no se muestre*/
   background-color: transparent;
   color: #ffffff;
   display: none;
@@ -83,10 +84,12 @@ header img {
   margin-right: 20px;
 }
 .menu_movil {
+  /*Hacemos lo mismo con el menu mocil para que no se muestre*/
   display: none;
   background-color: #000000FF;
 }
 .menu_movil ul {
+  /*Le damos estilo a el menu movil*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,27 +144,47 @@ footer {
 footer > * {
   padding: 1.4em;
 }
+/* APLICO ESTILO A LA BARRA DE SCROLL */
+body::-webkit-scrollbar {
+  width: 17px;
+}
+body::-webkit-scrollbar-track {
+  background: #000000FF;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 5px solid #000000FF;
+}
 /*RESPONSIVE*/
 /*1024-769*/
 @media screen and (max-width: 1024px) and (min-width: 769px) {
   .menu_ordenador li {
+    /* reducimos el tamaño de la fuente en el encabezado */
     font-size: 12px;
   }
 }
 /*768-0*/
 @media screen and (max-width: 768px) and (min-width: 0px) {
+  /*HEADER*/
   .menu_ordenador {
+    /* ocultamos el menu de ordenador */
     display: none;
   }
 
   .menu_hamburguesa {
+    /*y ahora mostramos el menu hambuerguqesa que va a ocupar el lugar del otro encabezado*/
     display: block;
   }
 
   .menu_movil.mostrar {
+    /*cuando a la clase manu_movil se le añada la clase mostrar tambien se mostrara lo que es el menu_movil
+      de esta forma lo que haremos es que al pulsar en el boton de menu_hamburguesa se le añada a menu_movil la clase mostrar
+      (archivo script, main.js)*/
     display: block;
   }
 
+  /*MAIN*/
   main a {
     /*bajamos el tamaño 4px*/
     font-size: 16px;
@@ -177,6 +200,11 @@ footer > * {
     font-size: 41px;
   }
 
+  main a {
+    width: 125px;
+  }
+
+  /*FOOTER*/
   footer {
     display: grid;
     text-align: center;
@@ -185,12 +213,9 @@ footer > * {
   footer > * {
     padding: 0.4em;
   }
-
-  main a {
-    width: 125px;
-  }
 }
 @media (prefers-color-scheme: light) {
+  /* lo que hacemos es ver si esta el dispositivo en modo claro y aplicamos los siguientes estilos */
   /*HEADER*/
   .section {
     background-color: #ffffff;
@@ -220,6 +245,16 @@ footer > * {
   footer {
     background-color: #ffffff;
     color: #000000FF;
+  }
+
+  /*BARRA SCROLL*/
+  body::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #000000FF;
+    border: 5px solid #ffffff;
   }
 }
 /*# sourceMappingURL=index.d01dfbe0.css.map */
