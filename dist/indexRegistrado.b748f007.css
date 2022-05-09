@@ -141,6 +141,7 @@ footer > * {
 /*RESPONSIVE*/
 /*1024-769*/
 @media screen and (max-width: 1024px) and (min-width: 769px) {
+  /*HEADER*/
   .menu_ordenador li {
     font-size: 12px;
   }
@@ -151,7 +152,7 @@ footer > * {
 }
 /*768-0*/
 @media screen and (max-width: 768px) and (min-width: 0px) {
-  .menu_ordenador {
+  ç .menu_ordenador {
     display: none;
   }
 
@@ -163,6 +164,7 @@ footer > * {
     display: block;
   }
 
+  /*MAIN*/
   main a {
     /*bajamos el tamaño 4px*/
     font-size: 16px;
@@ -178,7 +180,8 @@ footer > * {
     font-size: 41px;
   }
 
-  footer {
+  /**/
+  FOOTER footer {
     display: grid;
     text-align: center;
   }
@@ -187,6 +190,7 @@ footer > * {
     padding: 0.4em;
   }
 }
+/*MODO CLARO*/
 @media (prefers-color-scheme: light) {
   /*HEADER*/
   .section {
