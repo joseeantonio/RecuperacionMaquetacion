@@ -138,6 +138,18 @@ footer {
 footer > * {
   padding: 1.4em;
 }
+/* APLICO ESTILO A LA BARRA DE SCROLL */
+body::-webkit-scrollbar {
+  width: 17px;
+}
+body::-webkit-scrollbar-track {
+  background: #000000FF;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 5px solid #000000FF;
+}
 /*RESPONSIVE*/
 /*1024-769*/
 @media screen and (max-width: 1024px) and (min-width: 769px) {
@@ -217,6 +229,16 @@ footer > * {
   footer {
     background-color: #ffffff;
     color: #000000FF;
+  }
+
+  /*BARRA SCROLL*/
+  body::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #000000FF;
+    border: 5px solid #ffffff;
   }
 }
 /*# sourceMappingURL=indexRegistrado.b748f007.css.map */

@@ -7,7 +7,6 @@
 header .menu_ordenador ul li a{ /*Le damos collor blanco a las redirecciones del nav*/
   color: $blanco;
 }
-
 header img{ /*Un valor maximo a la imagen del logo*/
   max-width: 120px;
 }
@@ -18,12 +17,10 @@ header img{ /*Un valor maximo a la imagen del logo*/
   margin-right: 15px;
   padding: 7px;
 }
-
 .menu_ordenador>ul li{  /*Ponemos todos los li en la misma linea y creamos separacion entre cada uno de ellos*/
   padding: 15px;
   display: inline-block;
 }
-
 .section{ /*Le damos color de fondo ,tamaño atodo lo que es el encabezado y lo alineamos con flex.*/
   height: 63px;
   display: flex;
@@ -39,7 +36,6 @@ header img{ /*Un valor maximo a la imagen del logo*/
   font-size: 30px;
   margin-right: 20px;
 }
-
 .menu_movil{
   display: none;
   background-color: $negro;
@@ -58,7 +54,6 @@ header img{ /*Un valor maximo a la imagen del logo*/
 
 /*MAIN*/
 
-/*main*/
 main{
   width: 100%;
   height: 700px;
@@ -72,17 +67,14 @@ label{
 main div>h1{
   text-align: center;
 }
-
 section{
   width: 100%;
   height: 100%;
 }
-
 .colocar{
   width: 100%;
   padding-top: 47px;
 }
-
 .caja{
   position: relative;
   border-radius: 10px;
@@ -105,22 +97,15 @@ input{
   height: 27px;
   margin: 11px auto 0;
   background: none;
-
-
-
 }
-
 input[type=checkbox]{
   width: 13px;
   margin: 0;
 }
-
 .texto{
   font-weight: bold;
 }
-
-
-.boton_registro{
+.boton_registro{ /*boton de registro*/
   background-color: $boton-registrarse;
   color: $blanco;
   border: none;
@@ -170,25 +155,41 @@ footer{ /*Le indicamos estilos al footer y lo alineamos */
   justify-content: space-around;
   align-items: center;
 }
-
 footer>*{
   padding: 1.4em;
 }
 
 
+/* APLICO ESTILO A LA BARRA DE SCROLL */
+body::-webkit-scrollbar {
+  width: 17px;
+}
+body::-webkit-scrollbar-track {
+  background: $negro;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $blanco;
+  border-radius: 20px;
+  border: 5px solid $negro;
+}
+
 
 /*RESPONSIVE*/
 
-
 /*1024-769*/
 @media screen and (max-width: 1024px) and (min-width: 769px){
+
+  /*HEADER*/
   .menu_ordenador li{
     font-size: 12px;
   }
+
 }
 
 /*768-0*/
 @media screen and (max-width: 768px) and (min-width: 0px){
+
+  /*HEADER*/
   .menu_ordenador{
     display: none;
   }
@@ -199,13 +200,13 @@ footer>*{
     display: block;
   }
 
-
+  /*FOOTER*/
   footer{
     display: grid;
     text-align: center;
   }
-
   footer>*{
     padding: 0.4em;
   }
+
 }

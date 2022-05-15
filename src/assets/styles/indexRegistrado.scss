@@ -97,6 +97,20 @@ footer>*{
 }
 
 
+/* APLICO ESTILO A LA BARRA DE SCROLL */
+body::-webkit-scrollbar {
+  width: 17px;
+}
+body::-webkit-scrollbar-track {
+  background: $negro;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $blanco;
+  border-radius: 20px;
+  border: 5px solid $negro;
+}
+
+
 /*RESPONSIVE*/
 
 /*1024-769*/
@@ -165,4 +179,13 @@ footer>*{
   /*FOOTER*/
   footer {background-color: $blanco;color: $negro}
 
+
+  /*BARRA SCROLL*/
+  body::-webkit-scrollbar-track {
+    background: $blanco;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: $negro;
+    border: 5px solid $blanco;
+  }
 }

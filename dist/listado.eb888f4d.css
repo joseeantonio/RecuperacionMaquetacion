@@ -200,9 +200,22 @@ footer {
 footer > * {
   padding: 1.4em;
 }
+/* APLICO ESTILO A LA BARRA DE SCROLL */
+body::-webkit-scrollbar {
+  width: 17px;
+}
+body::-webkit-scrollbar-track {
+  background: #000000FF;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 5px solid #000000FF;
+}
 /*RESPONSIVE*/
 /*1024-769*/
 @media screen and (max-width: 1024px) and (min-width: 769px) {
+  /*HEADER*/
   .menu_ordenador li {
     font-size: 12px;
   }
@@ -211,6 +224,7 @@ footer > * {
     margin-left: 146px;
   }
 
+  /*MAIN*/
   main h3 {
     font-size: 39px;
   }

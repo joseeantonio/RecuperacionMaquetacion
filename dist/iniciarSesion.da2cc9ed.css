@@ -168,6 +168,7 @@ input[type=checkbox] {
 }
 
 button {
+  /* boton de iniciar sesion */
   background-color: #FF8F3E;
   color: #000000FF;
   border: none;
@@ -227,7 +228,6 @@ input {
 }
 
 /*FOOTER*/
-/*FOOTER*/
 footer {
   /*Le indicamos estilos al footer y lo alineamos */
   background-color: #000000FF;
@@ -241,13 +241,30 @@ footer > * {
   padding: 1.4em;
 }
 
+/* APLICO ESTILO A LA BARRA DE SCROLL */
+body::-webkit-scrollbar {
+  width: 17px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000000FF;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 5px solid #000000FF;
+}
+
 @media screen and (max-width: 1024px) and (min-width: 769px) {
+  /*HEADER*/
   .menu_ordenador li {
     font-size: 12px;
   }
 }
 /*768-0*/
 @media screen and (max-width: 768px) and (min-width: 0px) {
+  /*HEADER*/
   .menu_ordenador {
     display: none;
   }
@@ -260,6 +277,7 @@ footer > * {
     display: block;
   }
 
+  /*FOOTER*/
   footer {
     display: grid;
     text-align: center;
