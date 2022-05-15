@@ -111,6 +111,7 @@ main {
 }
 main > .caja > h1 {
   display: table-cell;
+  /*lo utilizo para centrarlo en medio del fondo de color*/
   vertical-align: middle;
   height: 109px;
   background-color: #FF3E32;
@@ -119,6 +120,13 @@ main > .caja > h1 {
   width: 250px;
   font-size: 48px;
 }
+.pokeball {
+  max-width: 90px;
+  animation: vuelta 7s infinite linear;
+  /*animacion*/
+  margin-top: -100px;
+}
+/*BARRA SCROLL*/
 body::-webkit-scrollbar {
   width: 17px;
 }
@@ -130,11 +138,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
   border: 5px solid #000000FF;
 }
-.pokeball {
-  max-width: 90px;
-  animation: vuelta 7s infinite linear;
-  margin-top: -100px;
-}
+/*Movimiento de vuelta que aplicamos a la pokeball*/
 @keyframes vuelta {
   from {
     transform: rotate(0deg) translate(250px) rotate(0deg);
@@ -155,13 +159,27 @@ footer {
 footer > * {
   padding: 1.4em;
 }
+/* APLICO ESTILO A LA BARRA DE SCROLL */
+body::-webkit-scrollbar {
+  width: 17px;
+}
+body::-webkit-scrollbar-track {
+  background: #000000FF;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 5px solid #000000FF;
+}
 /*RESPONSIVE*/
 /*1024-769*/
 @media screen and (max-width: 1024px) and (min-width: 769px) {
+  /*HEADER*/
   .menu_ordenador li {
     font-size: 12px;
   }
 
+  /*MAIN*/
   .caja {
     padding-top: 300px;
   }
@@ -173,10 +191,12 @@ footer > * {
   }
 
   .pokeball {
+    /*aumentamos tiempo ya que el recorrido ahor va a ser menor*/
     animation: vuelta 6s infinite linear;
   }
 
   @keyframes vuelta {
+    /*modificamos el recorrido*/
     from {
       transform: rotate(0deg) translate(200px) rotate(0deg);
     }
@@ -187,6 +207,7 @@ footer > * {
 }
 /*768-0*/
 @media screen and (max-width: 768px) and (min-width: 0px) {
+  /*HEADER*/
   .menu_ordenador {
     display: none;
   }
@@ -199,6 +220,7 @@ footer > * {
     display: block;
   }
 
+  /*MAIN*/
   .pokeball {
     animation: vuelta 3.2s infinite linear;
   }
@@ -218,6 +240,7 @@ footer > * {
   }
 
   @keyframes vuelta {
+    /*modificamos el recorrido*/
     from {
       transform: rotate(0deg) translate(90px) rotate(0deg);
     }
@@ -225,6 +248,7 @@ footer > * {
       transform: rotate(360deg) translate(90px) rotate(-360deg);
     }
   }
+  /*FOOTER*/
   footer {
     display: grid;
     text-align: center;

@@ -61,6 +61,9 @@ main>*{
   display: flex;
   justify-content: center;
 }
+a.boton_principal:hover, a.boton_principal:active{ /*Cuando estamos encima se disminuira el tamaño*/
+  font-size: 150%;
+}
 main a{
   color: $blanco;
   align-items: center;

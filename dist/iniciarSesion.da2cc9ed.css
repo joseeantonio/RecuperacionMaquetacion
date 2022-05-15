@@ -134,11 +134,13 @@ section {
 }
 
 .colocar {
+  /*Colocamos t0d0 el contecido*/
   width: 100%;
   padding-top: 100px;
 }
 
 .caja {
+  /*Es donde vamos a tener metido nuestro formulario*/
   position: relative;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.65);

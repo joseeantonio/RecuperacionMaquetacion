@@ -131,6 +131,7 @@ main > section > div {
   align-items: center;
   height: 100%;
 }
+/*DIFERENTES TAMAÑOS PARA CADA EVOLUCION*/
 .primera_evolucion {
   max-height: 126px;
   margin-top: 18%;
@@ -170,6 +171,7 @@ main > section > div > div:first-child > a > h3 {
   padding-top: 36px;
 }
 .separador {
+  /*estilo para las flechas*/
   padding-top: 16px;
 }
 main section img {
@@ -181,11 +183,15 @@ main {
 .evolucion:last-child {
   padding-bottom: 120px;
 }
+/*utilizo la clase de las flechas para darle tamaño*/
 .fa.fa-arrow-right {
   font-size: 27px;
   padding-top: 108px;
 }
 .fa.fa-arrow-down {
+  /*estas flechas nos van a servir para el responsive ya que vamos a ponerlo en columna y las
+   flechas deberan de ir para abajo en vez de para la derecha, por lo que ocultaremos las otras y
+   mostraremos estas.*/
   display: none;
 }
 /*FOOTER*/
@@ -270,6 +276,7 @@ body::-webkit-scrollbar-thumb {
 }
 /*768-0*/
 @media screen and (max-width: 768px) and (min-width: 0px) {
+  /*HEADER*/
   .menu_ordenador {
     display: none;
   }
@@ -282,6 +289,7 @@ body::-webkit-scrollbar-thumb {
     display: block;
   }
 
+  /*MAIN*/
   main a {
     /*bajamos el tamaño 4px*/
     font-size: 23px;
@@ -295,15 +303,6 @@ body::-webkit-scrollbar-thumb {
 
   main h1 {
     font-size: 48px;
-  }
-
-  footer {
-    display: grid;
-    text-align: center;
-  }
-
-  footer > * {
-    padding: 0.4em;
   }
 
   .evolucion {
@@ -324,6 +323,7 @@ body::-webkit-scrollbar-thumb {
     padding-top: 1px;
   }
 
+  /*DAMOS DIFERENTES MARGIN YA QUE AL CAMBIAR EL TAMAÑO DE LA IMAGEN SE NOS DESCOLOCA EL NOMBRE DE CADA EVOLUCION*/
   .segunda_evolucion {
     margin: 15% 0px 0px 53px;
   }
@@ -365,6 +365,16 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: -108px;
     font-size: 27px;
     text-align: center;
+  }
+
+  /*FOOTER*/
+  footer {
+    display: grid;
+    text-align: center;
+  }
+
+  footer > * {
+    padding: 0.4em;
   }
 }
 /*# sourceMappingURL=listado.eb888f4d.css.map */
