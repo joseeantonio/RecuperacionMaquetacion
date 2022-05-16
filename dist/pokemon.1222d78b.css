@@ -1,0 +1,341 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+a {
+  display: block;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/*HEADER*/
+header .menu_ordenador ul li a {
+  /*Le damos collor blanco a las redirecciones del nav*/
+  color: #ffffff;
+}
+
+header img {
+  /*Un valor maximo a la imagen del logo*/
+  max-width: 120px;
+}
+
+.ultimoLi {
+  /*Seleccionamos el resgistrarse y le creamos la caja con su color y sus estilos*/
+  margin-left: 141px;
+  font-size: 22px;
+}
+
+.menu_ordenador > ul li {
+  /*Ponemos todos los li en la misma linea y creamos separacion entre cada uno de ellos*/
+  padding: 15px;
+  display: inline-block;
+}
+
+.section {
+  /*Le damos color de fondo ,tamaño atodo lo que es el encabezado y lo alineamos con flex.*/
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000FF;
+}
+
+.menu_hamburguesa {
+  background-color: transparent;
+  color: #ffffff;
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.menu_movil {
+  display: none;
+  background-color: black;
+}
+
+.menu_movil ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu_movil li > a {
+  color: #ffffff;
+  font-size: 15px;
+  margin: 10px;
+}
+
+/*MAIN*/
+main {
+  /*adaptamos el ancho y predeterminamos el ancho y metemos imagen de fondo con sus diferentes atributos*/
+  width: 100%;
+  background-color: rgba(24, 95, 202, 0.28);
+}
+
+main > a {
+  padding: 23px 0px 18px 23px;
+}
+
+main > h1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 47px;
+  background: #C4C4C4;
+  border-radius: 17px;
+  width: 255px;
+  height: 62px;
+  text-align: center;
+  padding-top: 4px;
+  margin: 0 auto 30px;
+}
+
+section > img {
+  max-height: 272px;
+  width: auto;
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.principal > p {
+  padding-bottom: 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  width: 419px;
+}
+
+.caja {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 10px;
+  background: #46AEDB;
+  border-radius: 17px;
+  width: 387px;
+  height: 318px;
+}
+
+.caja h2 {
+  margin-bottom: 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  margin-top: 23px;
+  color: #ffffff;
+}
+
+.caja p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.debilidadesYtipos {
+  padding: 56px 0px 56px 0px;
+}
+
+.debilidadesYtipos > div > h3 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.debilidadesYtipos > div > div {
+  display: flex;
+  justify-content: space-around;
+  width: 264px;
+}
+
+.debilidadesYtipos > div > div > div > p {
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 3px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.debilidadesYtipos p {
+  border-radius: 5px;
+  width: 97px;
+  height: 29px;
+}
+
+/*APLICAMOS EL COLOR PARA CADA CUADRO CON SU DEBILIDAD O TIPO*/
+.fuego {
+  background: #FF7A30;
+}
+
+.volador {
+  background: linear-gradient(180deg, #31AAA3 0%, #31AAA3 54.16%, #888888 54.17%, #888888 100%);
+}
+
+.psiquico {
+  background: #FF61D3;
+}
+
+.hielo {
+  background: #31AAA3;
+}
+
+.planta {
+  background: #49FC71;
+}
+
+.veneno {
+  background: #B366C6;
+}
+
+/*FOOTER*/
+footer {
+  /*Le indicamos estilos al footer y lo alineamos */
+  background-color: #000000FF;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer > * {
+  padding: 1.4em;
+}
+
+/* APLICO ESTILO A LA BARRA DE SCROLL */
+body::-webkit-scrollbar {
+  width: 17px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000000FF;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 5px solid #000000FF;
+}
+
+/*RESPONSIVE*/
+/*1024-769*/
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  /*HEADER*/
+  .menu_ordenador li {
+    font-size: 12px;
+  }
+
+  .ultimoLi {
+    margin-left: 146px;
+  }
+}
+/*768-0*/
+@media screen and (max-width: 768px) and (min-width: 0px) {
+  /*HEADER*/
+  .menu_ordenador {
+    display: none;
+  }
+
+  .menu_hamburguesa {
+    display: block;
+  }
+
+  .menu_movil.mostrar {
+    display: block;
+  }
+
+  /*MAIN*/
+  main > section {
+    display: grid;
+  }
+
+  section > img {
+    margin: 0 auto 20px;
+    max-width: 220px;
+  }
+
+  .principal > p {
+    margin: 0 auto;
+    width: 245px;
+  }
+
+  .caja {
+    width: 255px;
+  }
+
+  .caja h2 {
+    font-size: 23px;
+  }
+
+  .caja p {
+    font-size: 23px;
+  }
+
+  .caja {
+    height: 303px;
+  }
+
+  /*FOOTER*/
+  footer {
+    display: grid;
+    text-align: center;
+  }
+
+  footer > * {
+    padding: 0.4em;
+  }
+}
+/*# sourceMappingURL=pokemon.1222d78b.css.map */

@@ -1,0 +1,293 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+a {
+  display: block;
+}
+p a {
+  display: inline;
+}
+li {
+  list-style-type: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+/*HEADER*/
+header .menu_ordenador ul li a {
+  /*Le damos collor blanco a las redirecciones del nav*/
+  color: #ffffff;
+}
+header img {
+  /*Un valor maximo a la imagen del logo*/
+  max-width: 120px;
+}
+.boton {
+  /*Seleccionamos el resgistrarse y le creamos la caja con su color y sus estilos*/
+  background: #2400ff;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 15px;
+  padding: 7px;
+}
+.menu_ordenador > ul li {
+  /*Ponemos todos los li en la misma linea y creamos separacion entre cada uno de ellos*/
+  padding: 15px;
+  display: inline-block;
+}
+.section {
+  /*Le damos color de fondo ,tamaño atodo lo que es el encabezado y lo alineamos con flex.*/
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000FF;
+}
+.menu_hamburguesa {
+  background-color: transparent;
+  color: #ffffff;
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+  margin-right: 20px;
+}
+.menu_movil {
+  display: none;
+  background-color: #000000FF;
+}
+.menu_movil ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu_movil li > a {
+  color: #ffffff;
+  font-size: 15px;
+  margin: 10px;
+}
+/*MAIN*/
+main {
+  /*adaptamos el ancho y predeterminamos el ancho y metemos imagen de fondo con sus diferentes atributos*/
+  width: 100%;
+  height: 700px;
+  background-image: url("img_fondo_index.b93903f9.png");
+  background-size: cover;
+  background-position: center;
+}
+.caja {
+  text-align: -webkit-center;
+  padding-top: 280px;
+}
+main > .caja > h1 {
+  display: table-cell;
+  /*lo utilizo para centrarlo en medio del fondo de color*/
+  vertical-align: middle;
+  height: 109px;
+  background-color: #FF3E32;
+  color: #ffffff;
+  border-radius: 10px;
+  width: 250px;
+  font-size: 48px;
+}
+.pokeball {
+  max-width: 90px;
+  animation: vuelta 7s infinite linear;
+  /*animacion*/
+  margin-top: -100px;
+}
+/*BARRA SCROLL*/
+body::-webkit-scrollbar {
+  width: 17px;
+}
+body::-webkit-scrollbar-track {
+  background: #000000FF;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 5px solid #000000FF;
+}
+/*Movimiento de vuelta que aplicamos a la pokeball*/
+@keyframes vuelta {
+  from {
+    transform: rotate(0deg) translate(250px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(250px) rotate(-360deg);
+  }
+}
+/*FOOTER*/
+footer {
+  /*Le indicamos estilos al footer y lo alineamos */
+  background-color: #000000FF;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer > * {
+  padding: 1.4em;
+}
+/* APLICO ESTILO A LA BARRA DE SCROLL */
+body::-webkit-scrollbar {
+  width: 17px;
+}
+body::-webkit-scrollbar-track {
+  background: #000000FF;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 5px solid #000000FF;
+}
+/*RESPONSIVE*/
+/*1024-769*/
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  /*HEADER*/
+  .menu_ordenador li {
+    font-size: 12px;
+  }
+
+  /*MAIN*/
+  .caja {
+    padding-top: 300px;
+  }
+
+  main > .caja > h1 {
+    height: 84px;
+    width: 225px;
+    font-size: 42px;
+  }
+
+  .pokeball {
+    /*aumentamos tiempo ya que el recorrido ahor va a ser menor*/
+    animation: vuelta 6s infinite linear;
+  }
+
+  @keyframes vuelta {
+    /*modificamos el recorrido*/
+    from {
+      transform: rotate(0deg) translate(200px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate(200px) rotate(-360deg);
+    }
+  }
+}
+/*768-0*/
+@media screen and (max-width: 768px) and (min-width: 0px) {
+  /*HEADER*/
+  .menu_ordenador {
+    display: none;
+  }
+
+  .menu_hamburguesa {
+    display: block;
+  }
+
+  .menu_movil.mostrar {
+    display: block;
+  }
+
+  /*MAIN*/
+  .pokeball {
+    animation: vuelta 3.2s infinite linear;
+  }
+
+  .caja {
+    padding-top: 170px;
+  }
+
+  main > .caja > h1 {
+    height: 64px;
+    width: 209px;
+    font-size: 31px;
+  }
+
+  .pokeball {
+    margin-top: 130px;
+  }
+
+  @keyframes vuelta {
+    /*modificamos el recorrido*/
+    from {
+      transform: rotate(0deg) translate(90px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate(90px) rotate(-360deg);
+    }
+  }
+  /*FOOTER*/
+  footer {
+    display: grid;
+    text-align: center;
+  }
+
+  footer > * {
+    padding: 0.4em;
+  }
+}
+@media (prefers-color-scheme: light) {
+  /*HEADER*/
+  .section {
+    background-color: #ffffff;
+  }
+
+  header .menu_ordenador ul li a {
+    color: #000000FF;
+  }
+
+  .menu_ordenador > ul > li:last-child > a {
+    color: #ffffff;
+  }
+
+  .menu_hamburguesa {
+    color: #000000FF;
+  }
+
+  header .menu_movil ul {
+    background-color: #ffffff;
+  }
+
+  .menu_movil li > a {
+    color: #000000FF;
+  }
+
+  /*FOOTER*/
+  footer {
+    background-color: #ffffff;
+    color: #000000FF;
+  }
+}
+/*# sourceMappingURL=error_4004.6051aa35.css.map */
