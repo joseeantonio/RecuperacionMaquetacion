@@ -3,8 +3,11 @@
   "source": "src/index.html",
   "browserslist": "> 0.3%, last 3 versions, not dead",
   "scripts": {
-    "start": "parcel serve src/index.html",
-    "deploy": "parcel build --public-url /RecuperacionMaquetacion/ src/index.html && gh-pages build"
+    "parcel:start": "parcel src/index.html",
+    "parcel:build": "parcel build src/index.html",
+    "clean": "rimraf dist .cache .cache-loader",
+    "start": "npm-run-all clean parcel:start",
+    "build": "npm-run-all clean parcel:build"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.3.1",
